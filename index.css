@@ -1,0 +1,136 @@
+﻿body {
+    background-color: #fafafa;
+    font-family: Calibri;
+    padding-top: 0;
+}
+aside{
+    width: 30%;
+    padding-top: 3%;
+    float: left;
+}
+section{
+    padding-top: 3%;
+    width: 70%;
+    padding-bottom: 3%;
+    float: left;
+}
+canvas {
+    width: 100% !important;
+    max-width: 1000px;
+    height: auto !important;
+    max-height: 400px;
+    background-color: white;
+}
+input, select{
+    width: 150px;
+    margin: .5em 0 1em 0;
+}
+button{
+        width: 40%;
+    }
+label{
+    margin-top: .5em;
+}
+p{
+    text-align: justify;
+    margin-bottom: 2em;
+    font-size: 1.1em;
+}
+h1{
+    
+}
+h3{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+#calculate_btn{
+    padding: 0.7em 1em;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1% 0;
+    float: none;
+    height: auto;
+}
+.letter{
+    margin: 0;
+    animation: spin 8s linear infinite;
+    -moz-animation: spin 8s linear infinite;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.6em;
+    font-family: 'Times New Roman';
+}
+@keyframes spin{
+    100% {transform: rotate(360deg)}
+}
+@-moz-keyframes spin{
+    100% {-moz-transform: rotate(360deg)}
+}
+table{
+    margin: 0 auto;
+}
+tr{
+    background-color: white;
+}
+tr:first-child{
+    background-color: rgba(75,192,192,0.6);
+}
+td{
+    border-spacing: 0;
+    border-collapse:collapse;
+    text-align: center;
+    padding: 2px 0;
+}
+@media (max-width: 764px)
+{
+    canvas{
+        max-height: 300px;
+    }
+    body{
+        font-size: 0.9em;
+    }
+     aside{
+        width: 100%;
+    }
+     section{
+        width: 100%;
+        margin-top: 2em;
+    }
+     input, select{
+         width: 200px;
+     }
+     button{
+         margin-top: .5em;
+     }
+}
+@media (max-width: 560px)
+{
+    .container{
+        padding: 1% 0;
+    }
+    body{
+        font-size:0.8em;
+    }
+}
+@media (max-width: 375px)
+{
+    input, select {
+        width: 100%;
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 1200px)
+{
+    input, select {
+        width: 250px;
+        font-size: 1em;
+    }
+    button{
+        margin-top: 2em;
+    }
+}
