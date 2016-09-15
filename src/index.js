@@ -25,6 +25,7 @@ function doIt() {
       
 }
 
+//Array
 var results = new Array();
 
 function doNewton(k, v) {  
